@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.NalsAndroid" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor">#33000000</item>
+        <item name="android:navigationBarColor">#33000000</item>
+        <item name="android:dialogTheme">@style/Theme.ZoomDialog</item>
+    </style>
+
+    <style name="StartingTheme" parent="Theme.NalsAndroid">
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+    </style>
+
+    <style name="Theme.ZoomDialog" parent="android:Theme.Material.Light.Dialog">
+        <item name="android:backgroundDimAmount">0.3</item>
+        <item name="android:windowAnimationStyle">@style/ZoomDialogStyle</item>
+    </style>
+
+    <style name="ZoomDialogStyle">
+        <item name="android:windowEnterAnimation">@anim/dialog_zoom_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_zoom_out</item>
+    </style>
+</resources>
